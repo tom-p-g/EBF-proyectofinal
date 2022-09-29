@@ -28,9 +28,16 @@ main {
     z-index: 1;
 }
 
+
 .menu-oculto {
     display: none;
 
+}
+.separador {
+    height: 1vh;
+    width: 100vw;
+    @include animacion1(40s, linear);
+    z-index: 2;
 }
 
 .seccion-main {
@@ -41,17 +48,21 @@ main {
         
         .sobremi {
             text-align: center;
-            
+            width: 20vw;
+            height: 15vh; 
             position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             top: auto;
             color: white;
             font-size: 20pt;
             margin-top: -20vh;
-            right: 35vw;
+            right: 38.5vw;
             border-radius: 10px;
             font-family: $font2;
             padding: 1%;
-            background-color: #0000004D;
+            background-color: #000000e4;
             transition: all 0.5s;
             z-index: 51;
     
@@ -99,40 +110,7 @@ main {
             padding-bottom: 15vh;
             padding-right: 15vw;
             padding-left: 15vw;
-            /* background-image: url(foto1.jpg);
-            background-size: cover;
-            background-blend-mode: hard-light;
-            border-top: solid 10px white;
-            border-bottom: solid 10px white;
-            border-right:solid 10px white ;
-            border-left: solid 10px white;
-            padding: 2%;
-            
-            flex-direction: column;
-            justify-content: space-around;
-            align-items: center;
-            text-align: center;
-            font-family: $font2;
-          
-
-            .card1-bg {
-               background-color: #0000006e;
-                border-radius: 10px;
-                .card1-titulo {
-                    margin-top: 3vh;
-                    margin-bottom: 3vh;
-                    font-size: 20pt;
-                    ;
-                }
-
-                p {
-                    padding: 3%;
-                    
-                    font-family: $font4;
-                    font-size: 16pt;
-                    color: white;
-                }
-            } */
+           
 
 
         }
@@ -156,3 +134,339 @@ main {
     }
 
 }
+.seccion-bodas {
+    @extend .seccion-main;
+    display:flex;
+    flex-direction: column;
+
+    label {
+
+        
+        .boton1 {
+            @extend .sobremi;
+
+    
+            &:hover {
+                background-color: #373737a3;
+    
+            }
+    
+    
+        }
+    
+    }
+
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+   
+    #bodas{
+        display: none;
+
+        &:checked~.car1 {
+            display: flex;
+            flex-direction: column;
+            background-color: #171a18;
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            
+
+
+        }
+    }
+
+    .car1 {
+        display: none;
+        .carousel-item {
+            border-top: solid 1vh white;
+            border-left: solid 1vh white;
+            border-right: solid 1vh white;
+            border-bottom: solid 1vh white;
+        }
+        .carousel-caption{
+            background-color: #000000f1;
+           
+            border-radius: 10px;
+            
+        
+        }
+    }
+
+}
+.seccion-quince {
+    @extend .seccion-main;
+    display:flex;
+    flex-direction: column;
+
+    label {
+
+        
+        .boton1 {
+            @extend .sobremi;
+
+    
+            &:hover {
+                background-color: #373737a3;
+    
+            }
+    
+    
+        }
+    
+    }
+
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+   
+    #quince{
+        display: none;
+
+        &:checked~.car2 {
+            display: flex;
+            flex-direction: column;
+            background-color: #0b2b21;
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            
+
+
+        }
+    }
+
+    .car2 {
+        @extend .car1;
+    }
+
+}
+.seccion-newborn {
+    @extend .seccion-main;
+    display:flex;
+    flex-direction: column;
+
+    label {
+
+        
+        .boton1 {
+            @extend .sobremi;
+
+    
+            &:hover {
+                background-color: #373737a3;
+    
+            }
+    
+    
+        }
+    
+    }
+
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+   
+    #newborn{
+        display: none;
+
+        &:checked~.car1 {
+            display: flex;
+            flex-direction: column;
+            background-color: #303d3fce;
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            
+
+
+        }
+    }
+
+    .car2 {
+        @extend .car1;
+    }
+
+}
+.seccion-maternidad {
+    @extend .seccion-main;
+    display:flex;
+    flex-direction: column;
+
+    label {
+
+        
+        .boton1 {
+            @extend .sobremi;
+
+    
+            &:hover {
+                background-color: #373737a3;
+    
+            }
+    
+    
+        }
+    
+    }
+
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+   
+    #maternidad{
+        display: none;
+
+        &:checked~.car2 {
+            display: flex;
+            flex-direction: column;
+            background-color: #211b2ace;
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            
+
+
+        }
+    }
+
+    .car2 {
+        @extend .car1;
+    }
+
+}
+.seccion-gastro {
+    @extend .seccion-main;
+    display:flex;
+    flex-direction: column;
+
+    label {
+
+        
+        .boton1 {
+            @extend .sobremi;
+
+    
+            &:hover {
+                background-color: #373737a3;
+    
+            }
+    
+    
+        }
+    
+    }
+
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+   
+    #gastro{
+        display: none;
+
+        &:checked~.car1 {
+            display: flex;
+            flex-direction: column;
+            background-color: #3d1319e4;
+           
+            padding-top: 15vh;
+            padding-bottom: 15vh;
+            padding-right: 15vw;
+            padding-left: 15vw;
+            
+
+
+        }
+    }
+
+    .car1 {
+        @extend .car1;
+    }
+
+}
+
+
