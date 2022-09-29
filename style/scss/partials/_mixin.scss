@@ -1,0 +1,56 @@
+@mixin animacion1 ($duracion,$funcion) {
+    animation-duration: $duracion;
+    animation-iteration-count: infinite;
+    animation-timing-function: $funcion;
+    @include transicionPaleta__principal;
+ 
+}
+
+@mixin transicionPaleta__principal {
+    animation-name: transicionPaleta__principal;
+    @keyframes transicionPaleta__principal {
+        0% {
+            background-color: map-get($paleta , verde);
+        }
+        30% {
+            background-color: map-get($paleta , bordeaux);
+        }
+        60% {
+            background-color: map-get($paleta , violeta);
+        }
+        90% {
+            background-color: map-get($paleta , dorado );
+        }
+        100% {
+            background-color: map-get($paleta , verde);
+        }
+    }
+ }
+ @mixin animacion2 ($duracion,$funcion) {
+    animation-duration: $duracion;
+    animation-iteration-count: infinite;
+    animation-timing-function: $funcion;
+    @include transicionPaleta_secundaria;
+    
+   
+}
+@mixin transicionPaleta_secundaria {
+    animation-name: transicionPaleta__secundaria;
+    @keyframes transicionPaleta__secundaria {
+        0% {
+            color: $dorado;
+        }
+        30% {
+            color:map-get($paleta , mostaza);
+        }
+        60% {
+            color: white;
+        }
+        80% {
+            color: map-get($paleta , bordeaux);
+        }
+        100% {
+            color: map-get($paleta , dorado );
+        }
+    }
+}

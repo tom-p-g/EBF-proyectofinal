@@ -1,0 +1,62 @@
+@media screen and (max-width:768px) {
+    nav {
+        height: auto;
+
+        header {
+            display: grid;
+            grid-template-areas: "rowa1 rowa2" ". rowb2";
+            grid-template-columns: 1fr 9fr;
+            .menu {
+                display: none;
+            }
+            .menu-oculto {
+                display: flex;
+                justify-content: center;
+                
+                align-items: center;
+                grid-area: rowa2;
+                .logo {
+                    display: none;
+                    height: 8vh;
+                    width: auto;
+                    margin-right: 5vw;
+                }
+
+            }
+            .mostrar-menu {
+                font-size: 2em;
+                display: block;
+                cursor: pointer;
+                background-color: none;
+                width: auto;
+                color: white;
+                height: auto;
+                width: 30px;
+                margin-top: 10%;
+                margin-left: 5%;
+                grid-area: rowa1;
+            }
+    
+            #check {
+                display: none;
+    
+                &:checked~.menu {
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+                    justify-content: space-around;
+                    align-items: center;
+                    grid-area: rowb2;
+                    
+                    .hide {
+                        display: none;
+                    }
+                                    
+    
+                }
+            }
+
+        }
+        
+    }
+}

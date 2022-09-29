@@ -1,0 +1,52 @@
+nav {
+    
+    background-color: #0000004D;   
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 52;
+    position: fixed;
+    transition-duration: 0.5s;
+    &:hover {
+        background-color: #373737d3;
+    }
+    
+    
+    
+    header {
+
+        label,#check {
+            display: none;
+        }
+        .menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+           
+            .menu-item {
+                
+                a {
+                   transition: all;
+                    &:hover {
+                        @include animacion2(1s,linear);
+                     }
+
+                }
+
+               
+            }
+            .logo {
+                width:auto;
+                height:8vh;
+                
+            }
+
+
+        }
+
+    }
+    
+}

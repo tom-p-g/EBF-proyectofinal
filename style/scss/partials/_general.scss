@@ -1,0 +1,147 @@
+h1 {
+    font-family: $font1;
+    font-size: 24pt;
+}
+
+h2 {
+    font-family: $font2;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: $font4;
+    color: white;
+    font-size: 20pt;
+}
+h4 {
+    font-family: $font4;
+    color: white;
+    font-size: 12pt;
+}
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+main {
+    z-index: 1;
+}
+
+.menu-oculto {
+    display: none;
+
+}
+
+.seccion-main {
+    position: relative;
+    label {
+        height: 0%;
+        display:inline;
+        
+        .sobremi {
+            text-align: center;
+            
+            position: absolute;
+            top: auto;
+            color: white;
+            font-size: 20pt;
+            margin-top: -20vh;
+            right: 35vw;
+            border-radius: 10px;
+            font-family: $font2;
+            padding: 1%;
+            background-color: #0000004D;
+            transition: all 0.5s;
+            z-index: 51;
+    
+            &:hover {
+                background-color: #373737a3;
+    
+            }
+    
+    
+        }
+    
+    }
+
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+   
+    #sobremi {
+        display: none;
+
+        &:checked~.car1 {
+            display: flex;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+            margin-right: 10vw;
+            margin-left: 10vw;
+            /* background-image: url(foto1.jpg);
+            background-size: cover;
+            background-blend-mode: hard-light;
+            border-top: solid 10px white;
+            border-bottom: solid 10px white;
+            border-right:solid 10px white ;
+            border-left: solid 10px white;
+            padding: 2%;
+            
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            font-family: $font2;
+          
+
+            .card1-bg {
+               background-color: #0000006e;
+                border-radius: 10px;
+                .card1-titulo {
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    font-size: 20pt;
+                    ;
+                }
+
+                p {
+                    padding: 3%;
+                    
+                    font-family: $font4;
+                    font-size: 16pt;
+                    color: white;
+                }
+            } */
+
+
+        }
+    }
+
+    .car1 {
+        display: none;
+        .carousel-caption{
+            background-color: #000000f1;
+           
+            border-radius: 10px;
+            
+        
+        }
+    }
+
+}

@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Abel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400&family=Poppins:wght@300;400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  *::selection {
+    background-color: #eb951f;
+    color: white; }
+
+body {
+  overflow-x: hidden; }
+
+h1 {
+  font-family: "Great Vibes";
+  font-size: 24pt; }
+
+h2 {
+  font-family: "Nunito";
+  font-size: 10pt;
+  text-transform: uppercase; }
+
+h3 {
+  font-family: "Abel";
+  color: white;
+  font-size: 20pt; }
+
+h4 {
+  font-family: "Abel";
+  color: white;
+  font-size: 12pt; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+main {
+  z-index: 1; }
+
+.menu-oculto {
+  display: none; }
+
+.seccion-main {
+  position: relative; }
+  .seccion-main label {
+    height: 0%;
+    display: inline; }
+    .seccion-main label .sobremi {
+      text-align: center;
+      position: absolute;
+      top: auto;
+      color: white;
+      font-size: 20pt;
+      margin-top: -20vh;
+      right: 35vw;
+      border-radius: 10px;
+      font-family: "Nunito";
+      padding: 1%;
+      background-color: #0000004D;
+      transition: all 0.5s;
+      z-index: 51; }
+      .seccion-main label .sobremi:hover {
+        background-color: #373737a3; }
+  .seccion-main .cover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    z-index: 2; }
+    .seccion-main .cover img {
+      position: relative;
+      width: 100%;
+      height: auto; }
+  .seccion-main #sobremi {
+    display: none; }
+    .seccion-main #sobremi:checked ~ .car1 {
+      display: flex;
+      margin-top: 10vh;
+      margin-bottom: 10vh;
+      margin-right: 10vw;
+      margin-left: 10vw;
+      /* background-image: url(foto1.jpg);
+            background-size: cover;
+            background-blend-mode: hard-light;
+            border-top: solid 10px white;
+            border-bottom: solid 10px white;
+            border-right:solid 10px white ;
+            border-left: solid 10px white;
+            padding: 2%;
+            
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+            font-family: $font2;
+          
+
+            .card1-bg {
+               background-color: #0000006e;
+                border-radius: 10px;
+                .card1-titulo {
+                    margin-top: 3vh;
+                    margin-bottom: 3vh;
+                    font-size: 20pt;
+                    ;
+                }
+
+                p {
+                    padding: 3%;
+                    
+                    font-family: $font4;
+                    font-size: 16pt;
+                    color: white;
+                }
+            } */ }
+  .seccion-main .car1 {
+    display: none; }
+    .seccion-main .car1 .carousel-caption {
+      background-color: #000000f1;
+      border-radius: 10px; }
+
+nav {
+  background-color: #0000004D;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 52;
+  position: fixed;
+  transition-duration: 0.5s; }
+  nav:hover {
+    background-color: #373737d3; }
+  nav header label, nav header #check {
+    display: none; }
+  nav header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    nav header .menu .menu-item a {
+      transition: all; }
+      nav header .menu .menu-item a:hover {
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-name: transicionPaleta__secundaria; }
+
+@keyframes transicionPaleta__secundaria {
+  0% {
+    color: #c98703; }
+  30% {
+    color: #eb951f; }
+  60% {
+    color: white; }
+  80% {
+    color: #671313; }
+  100% {
+    color: #c98703; } }
+    nav header .menu .logo {
+      width: auto;
+      height: 8vh; }
+
+footer {
+  height: auto;
+  width: 100vw;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: transicionPaleta__principal;
+  display: grid;
+  grid-template-areas: "frow1" "frow2"; }
+
+@keyframes transicionPaleta__principal {
+  0% {
+    background-color: #43652a; }
+  30% {
+    background-color: #671313; }
+  60% {
+    background-color: #462037; }
+  90% {
+    background-color: #c98703; }
+  100% {
+    background-color: #43652a; } }
+  footer .frow1 {
+    grid-area: frow1;
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    justify-content: space-around; }
+    footer .frow1 .firma {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50vw; }
+      footer .frow1 .firma a img {
+        height: 15vh;
+        width: auto; }
+    footer .frow1 .rrss {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 8vh;
+      width: 50vw;
+      padding: 5%;
+      font-family: "Nunito";
+      margin: 1%; }
+      footer .frow1 .rrss .rrss-item {
+        margin-left: 1vw;
+        margin-right: 1vw; }
+        footer .frow1 .rrss .rrss-item img {
+          height: 90%;
+          width: auto; }
+  footer .frow2 {
+    grid-area: frow2;
+    text-align: center; }
+
+@media screen and (max-width: 768px) {
+  nav {
+    height: auto; }
+    nav header {
+      display: grid;
+      grid-template-areas: "rowa1 rowa2" ". rowb2";
+      grid-template-columns: 1fr 9fr; }
+      nav header .menu {
+        display: none; }
+      nav header .menu-oculto {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: rowa2; }
+        nav header .menu-oculto .logo {
+          display: none;
+          height: 8vh;
+          width: auto;
+          margin-right: 5vw; }
+      nav header .mostrar-menu {
+        font-size: 2em;
+        display: block;
+        cursor: pointer;
+        background-color: none;
+        width: auto;
+        color: white;
+        height: auto;
+        width: 30px;
+        margin-top: 10%;
+        margin-left: 5%;
+        grid-area: rowa1; }
+      nav header #check {
+        display: none; }
+        nav header #check:checked ~ .menu {
+          display: flex;
+          flex-direction: row;
+          text-align: center;
+          justify-content: space-around;
+          align-items: center;
+          grid-area: rowb2; }
+          nav header #check:checked ~ .menu .hide {
+            display: none; } }
