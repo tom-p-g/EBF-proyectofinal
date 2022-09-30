@@ -1,0 +1,85 @@
+.main-contacto {
+    .cover {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: auto;
+        position: relative;
+
+        z-index: 2;
+
+
+
+        img {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           position: absolute;
+    
+            width: 100vw;
+            height: auto;
+            z-index: 3;
+            .formulario_caja {
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+                height: auto;
+                background-color: #373737a3;
+                padding: 5%;
+                form{
+                    .form_row {
+                        margin-top: 1vh;
+                        margin-bottom: 1vh;
+                        .form_txt {
+                            font-family: $font2;
+                            margin: 2%;
+                            font-size: 20pt;
+                            font-weight: 600;
+                            color: white;
+                        }
+                        .form_list{
+                            display: flex;
+                            justify-content: space-around;
+                            padding: 2%;
+                            margin: 1%;
+                            font-family: $font2;
+                            color: white;
+                            .form_list_item {
+                                display: flex;
+                                flex-direction: column;
+                            }
+                        }
+                        .form_input {
+                            input {
+                                width: 20vw;
+                                height: auto;
+                                padding: 2%;
+
+                            }
+                            
+                        }
+
+                    }
+                    
+
+                }
+
+                
+            }
+        }
+
+    }
+
+    
+}

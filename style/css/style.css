@@ -309,6 +309,61 @@ nav {
       width: auto;
       height: 8vh; }
 
+.main-contacto .cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: auto;
+  position: relative;
+  z-index: 2; }
+  .main-contacto .cover img {
+    position: relative;
+    width: 100%;
+    height: auto; }
+  .main-contacto .cover .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: 3; }
+    .main-contacto .cover .formulario .formulario_caja {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80vw;
+      height: auto;
+      background-color: #373737a3;
+      padding: 5%; }
+      .main-contacto .cover .formulario .formulario_caja form .form_row {
+        margin-top: 1vh;
+        margin-bottom: 1vh; }
+        .main-contacto .cover .formulario .formulario_caja form .form_row .form_txt {
+          font-family: "Nunito";
+          margin: 2%;
+          font-size: 20pt;
+          font-weight: 600;
+          color: white; }
+        .main-contacto .cover .formulario .formulario_caja form .form_row .form_list {
+          display: flex;
+          justify-content: space-around;
+          padding: 2%;
+          margin: 1%;
+          font-family: "Nunito";
+          color: white; }
+          .main-contacto .cover .formulario .formulario_caja form .form_row .form_list .form_list_item {
+            display: flex;
+            flex-direction: column; }
+        .main-contacto .cover .formulario .formulario_caja form .form_row .form_input input {
+          width: 20vw;
+          height: auto;
+          padding: 2%; }
+
 footer {
   height: auto;
   width: 100vw;
