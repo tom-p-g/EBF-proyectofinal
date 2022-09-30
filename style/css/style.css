@@ -340,29 +340,54 @@ nav {
       height: auto;
       background-color: #373737a3;
       padding: 5%; }
-      .main-contacto .cover .formulario .formulario_caja form .form_row {
-        margin-top: 1vh;
-        margin-bottom: 1vh; }
-        .main-contacto .cover .formulario .formulario_caja form .form_row .form_txt {
-          font-family: "Nunito";
-          margin: 2%;
-          font-size: 20pt;
-          font-weight: 600;
-          color: white; }
-        .main-contacto .cover .formulario .formulario_caja form .form_row .form_list {
+      .main-contacto .cover .formulario .formulario_caja form fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.5fr; }
+        .main-contacto .cover .formulario .formulario_caja form fieldset .form_row {
+          margin-top: 1vh;
+          margin-bottom: 1vh; }
+          .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_txt {
+            font-family: "Nunito";
+            margin: 2%;
+            font-size: 20pt;
+            font-weight: 600;
+            color: white; }
+          .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_list {
+            display: flex;
+            justify-content: space-around;
+            padding: 2%;
+            margin: 1%;
+            font-family: "Nunito";
+            color: white; }
+            .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_list .form_list_item {
+              display: flex;
+              flex-direction: column; }
+          .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_input input {
+            width: 20vw;
+            height: auto;
+            padding: 2%; }
+        .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones {
           display: flex;
           justify-content: space-around;
-          padding: 2%;
-          margin: 1%;
-          font-family: "Nunito";
-          color: white; }
-          .main-contacto .cover .formulario .formulario_caja form .form_row .form_list .form_list_item {
+          align-items: center;
+          margin: 2%; }
+          .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones input[type=submit],
+          .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones input[type=reset] {
+            background-color: #373737a3;
+            font-family: "Nunito";
+            text-transform: uppercase;
+            color: white;
             display: flex;
-            flex-direction: column; }
-        .main-contacto .cover .formulario .formulario_caja form .form_row .form_input input {
-          width: 20vw;
-          height: auto;
-          padding: 2%; }
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+            width: 10vw;
+            height: auto;
+            transition: all 1s; }
+            .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones input[type=submit]:hover,
+            .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones input[type=reset]:hover {
+              transform: scale(1.05); }
 
 footer {
   height: auto;
