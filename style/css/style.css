@@ -76,11 +76,9 @@ main {
       justify-content: center;
       top: auto;
       color: white;
-      font-size: 20pt;
       margin-top: -20vh;
       right: 38.5vw;
       border-radius: 10px;
-      font-family: "Nunito";
       padding: 1%;
       background-color: #000000e4;
       transition: all 0.5s;
@@ -94,6 +92,8 @@ main {
     width: 100vw;
     height: auto;
     z-index: 2; }
+    .seccion-main .cover .coverm, .seccion-bodas .cover .coverm, .seccion-quince .cover .coverm, .seccion-newborn .cover .coverm, .seccion-maternidad .cover .coverm, .seccion-gastro .cover .coverm {
+      display: none; }
     .seccion-main .cover img, .seccion-bodas .cover img, .seccion-quince .cover img, .seccion-newborn .cover img, .seccion-maternidad .cover img, .seccion-gastro .cover img {
       position: relative;
       width: 100%;
@@ -317,6 +317,8 @@ nav {
   height: auto;
   position: relative;
   z-index: 2; }
+  .main-contacto .cover .coverm {
+    display: none; }
   .main-contacto .cover img {
     position: relative;
     width: 100%;
@@ -457,7 +459,12 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1%;
         grid-area: rowa2; }
+        nav header .menu-oculto .menu-item {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
         nav header .menu-oculto .logo {
           display: none;
           height: 8vh;
@@ -465,15 +472,15 @@ footer {
           margin-right: 5vw; }
       nav header .mostrar-menu {
         font-size: 2em;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         cursor: pointer;
         background-color: none;
         width: auto;
         color: white;
         height: auto;
         width: 30px;
-        margin-top: 10%;
-        margin-left: 5%;
         grid-area: rowa1; }
       nav header #check {
         display: none; }
@@ -485,4 +492,71 @@ footer {
           align-items: center;
           grid-area: rowb2; }
           nav header #check:checked ~ .menu .hide {
-            display: none; } }
+            display: none; }
+  .seccion-main .sobremi, .seccion-bodas .sobremi, .seccion-quince .sobremi, .seccion-newborn .sobremi, .seccion-maternidad .sobremi, .seccion-gastro .sobremi, .seccion-bodas label .boton1, .seccion-quince label .boton1, .seccion-newborn label .boton1, .seccion-maternidad label .boton1, .seccion-gastro label .boton1 {
+    margin-top: -18vh;
+    width: 25vw; }
+  .seccion-main h3, .seccion-bodas h3, .seccion-quince h3, .seccion-newborn h3, .seccion-maternidad h3, .seccion-gastro h3 {
+    font-size: 12pt;
+    color: white; }
+  .seccion-main h5, .seccion-bodas h5, .seccion-quince h5, .seccion-newborn h5, .seccion-maternidad h5, .seccion-gastro h5 {
+    font-size: 10pt; }
+  .seccion-main p, .seccion-bodas p, .seccion-quince p, .seccion-newborn p, .seccion-maternidad p, .seccion-gastro p {
+    font-size: 8pt; }
+  .main-contacto .cover .formulario .formulario_caja {
+    padding: 1%;
+    margin-top: 15vh; }
+    .main-contacto .cover .formulario .formulario_caja form fieldset {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 0.5fr; }
+      .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_txt {
+        font-size: 12pt; }
+      .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones input[type=submit],
+      .main-contacto .cover .formulario .formulario_caja form fieldset .form_botones input[type=reset] {
+        width: 20vw;
+        height: 10vh; } }
+
+@media screen and (max-width: 576px) {
+  .carousel-caption {
+    margin-top: 20vh; }
+    .carousel-caption h5 {
+      font-size: 8pt; }
+  .seccion-main .cover .coverp, .seccion-bodas .cover .coverp, .seccion-quince .cover .coverp, .seccion-newborn .cover .coverp, .seccion-maternidad .cover .coverp, .seccion-gastro .cover .coverp {
+    display: none; }
+  .seccion-main .cover .coverm, .seccion-bodas .cover .coverm, .seccion-quince .cover .coverm, .seccion-newborn .cover .coverm, .seccion-maternidad .cover .coverm, .seccion-gastro .cover .coverm {
+    display: block; }
+  .main-contacto .cover .coverp {
+    display: none; }
+  .main-contacto .cover .coverm {
+    display: block; }
+  .main-contacto .cover .formulario .formulario_caja form fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_input {
+      width: 50vw; }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    footer .frow1 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      footer .frow1 .firma {
+        justify-content: center;
+        width: 100vw;
+        height: auto; }
+        footer .frow1 .firma a {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          footer .frow1 .firma a img {
+            padding: 2%; }
+      footer .frow1 .rrss {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100vw; } }

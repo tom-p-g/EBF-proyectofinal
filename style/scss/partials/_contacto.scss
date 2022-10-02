@@ -9,7 +9,9 @@
         position: relative;
 
         z-index: 2;
-
+        .coverm {
+            display: none;
+        }
 
 
         img {

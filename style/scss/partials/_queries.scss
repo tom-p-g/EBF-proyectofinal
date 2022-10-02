@@ -4,17 +4,27 @@
 
         header {
             display: grid;
-            grid-template-areas: "rowa1 rowa2" ". rowb2";
+            grid-template-areas: "rowa1 rowa2"". rowb2";
             grid-template-columns: 1fr 9fr;
+
             .menu {
                 display: none;
             }
+
             .menu-oculto {
                 display: flex;
                 justify-content: center;
-                
+
                 align-items: center;
+                margin-top: 1%;
                 grid-area: rowa2;
+
+                .menu-item {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
                 .logo {
                     display: none;
                     height: 8vh;
@@ -23,23 +33,26 @@
                 }
 
             }
+
             .mostrar-menu {
                 font-size: 2em;
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 cursor: pointer;
                 background-color: none;
                 width: auto;
                 color: white;
                 height: auto;
                 width: 30px;
-                margin-top: 10%;
-                margin-left: 5%;
+
+
                 grid-area: rowa1;
             }
-    
+
             #check {
                 display: none;
-    
+
                 &:checked~.menu {
                     display: flex;
                     flex-direction: row;
@@ -47,16 +60,193 @@
                     justify-content: space-around;
                     align-items: center;
                     grid-area: rowb2;
-                    
+
                     .hide {
                         display: none;
                     }
-                                    
-    
+
+
                 }
             }
 
         }
-        
+
+    }
+
+    .seccion-main {
+        .sobremi {
+            margin-top: -18vh;
+            width: 25vw;
+        }
+
+        h3 {
+            font-size: 12pt;
+            color: white;
+        }
+
+        h5 {
+            font-size: 10pt;
+        }
+
+        p {
+            font-size: 8pt;
+        }
+
+    }
+
+    .main-contacto {
+        .cover {
+
+
+
+
+
+
+
+
+            .formulario {
+
+                .formulario_caja {
+                    padding: 1%;
+                    margin-top: 15vh;
+
+
+                    form {
+                        fieldset {
+                            grid-template-columns: 1fr 1fr;
+                            grid-template-rows: 1fr 1fr 0.5fr;
+
+                            .form_row {
+                                .form_txt {
+                                    font-size: 12pt;
+                                }
+
+
+                            }
+
+
+
+
+                            .form_botones {
+
+                                input[type=submit],
+                                input[type=reset] {
+
+                                    width: 20vw;
+                                    height: 10vh;
+
+
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .carousel-caption {
+        margin-top: 20vh;
+        h5 {
+            font-size: 8pt;
+        }
+    }
+
+    .seccion-main {
+        .cover {
+            .coverp {
+                display: none;
+            }
+
+            .coverm {
+                display: block;
+
+            }
+        }
+
+    }
+
+
+
+    .main-contacto {
+        .cover {
+            .coverp {
+                display: none;
+            }
+
+            .coverm {
+                display: block;
+
+            }
+
+            .formulario {
+                .formulario_caja {
+                    form {
+                        fieldset {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-around;
+                            align-items: center;
+
+                            .form_row {
+                                .form_input {
+                                    width: 50vw;
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .frow1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .firma {
+                justify-content: center;
+                width: 100vw;
+                height: auto;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        padding: 2%;
+                    }
+
+                }
+
+            }
+
+            .rrss {
+                flex-direction: row;
+                justify-content: space-around;
+                width: 100vw;
+            }
+        }
     }
 }

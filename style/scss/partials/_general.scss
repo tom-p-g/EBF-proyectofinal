@@ -56,11 +56,11 @@ main {
             justify-content: center;
             top: auto;
             color: white;
-            font-size: 20pt;
+
             margin-top: -20vh;
             right: 38.5vw;
             border-radius: 10px;
-            font-family: $font2;
+
             padding: 1%;
             background-color: #000000e4;
             transition: all 0.5s;
@@ -85,6 +85,9 @@ main {
         height: auto;
 
         z-index: 2;
+        .coverm {
+            display: none;
+        }
 
 
 
