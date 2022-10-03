@@ -3,6 +3,7 @@ Proyecto Final - Desarrollo Web - Coder House - Autor: Tomás Perez Gorojovsky.
 Links Relevantes: 
 github: https://github.com/tom-p-g/EBF-proyectofinal
 pages: https://tom-p-g.github.io/EBF-proyectofinal/index.html
+netlify: https://elianabalbarreyfotografa.netlify.app/
 
 Links pre-entregas: 
 Tercera: https://github.com/tom-p-g/ElianaBalbarrey_TomasPerez
@@ -22,6 +23,6 @@ Notas para Mati:
     Bootstrap esta usado solo para los "carrousel".
 
     Desafortunadamente me encontré algunos problemas que no tuve tiempo para corregir, sobretodo con los media-queries llegando a la version mobile, por la naturaleza de mi proyecto que está lleno de fotos apaisadas, no quedó óptima su visualización.
-    Intenté agregar carrouseles extras con fotos en vertical que fueran puestos en display al llegar a cierta media query, pero por alguna razón (tal vez algo de bootstrap) no podia hacerles display:hidden al carrousel original y simplemente aparecían los dos. 
+    Intenté agregar carrouseles extras con fotos en vertical que fueran puestos en display al llegar a cierta media query, pero por alguna razón (tal vez algo de bootstrap) no podia hacerles display:none al carrousel original y simplemente aparecían los dos. 
    
    También surgió un problema con los enlaces de las img donde el problema parecía radicar principalmente si eran .JPG o .jpg. Tuve que poner algunas con minuscula y otras con mayuscula dependiendo de si el servidor las cargaba o no, espero que se puedan ver todas.
