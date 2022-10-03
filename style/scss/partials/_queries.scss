@@ -327,5 +327,24 @@
 
 
 }
+@media screen and (max-width: 375px) {
+    .main-contacto{
+        .cover {
+            .coverm {
+                display: none;
+            }
+            .coverms {
+                display: block;
+            }
 
+        }
+       
+    }
 
+.form_botones {
+    font-size: 8pt;
+}
+.formulario_caja {
+    padding: 0%;
+}
+}

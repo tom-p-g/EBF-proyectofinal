@@ -332,6 +332,8 @@ nav {
   z-index: 2; }
   .main-contacto .cover .coverm {
     display: none; }
+  .main-contacto .cover .coverms {
+    display: none; }
   .main-contacto .cover img {
     position: relative;
     width: 100%;
@@ -601,3 +603,13 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; } }
+
+@media screen and (max-width: 375px) {
+  .main-contacto .cover .coverm {
+    display: none; }
+  .main-contacto .cover .coverms {
+    display: block; }
+  .form_botones {
+    font-size: 8pt; }
+  .formulario_caja {
+    padding: 0%; } }
