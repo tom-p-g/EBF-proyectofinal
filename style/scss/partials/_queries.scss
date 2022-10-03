@@ -72,7 +72,7 @@
         }
 
     }
-
+    
     .seccion-main {
         .sobremi {
             margin-top: -18vh;
@@ -152,6 +152,8 @@
 }
 
 @media screen and (max-width: 576px) {
+   
+   
     .carousel-caption {
         margin-top: 20vh;
         h5 {
@@ -215,19 +217,22 @@
     footer {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+       
 
         .frow1 {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
             align-items: center;
-
+            
             .firma {
                 justify-content: center;
                 width: 100vw;
                 height: auto;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
 
                 a {
                     display: flex;
@@ -246,7 +251,81 @@
                 flex-direction: row;
                 justify-content: space-around;
                 width: 100vw;
+                padding: 10%;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
+            }
+            .frow2 {
+                h4 {
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
+
+                }
+               
             }
         }
     }
 }
+@media screen and (max-width: 425px) {
+    nav {
+        header {
+            #check {
+                &:checked~.menu {
+                    flex-direction: column;
+                }
+
+            }
+        }
+    }
+    main {
+        .seccion-main {
+        .sobremi {
+            width: 50vw;
+            right: 25vw;
+        
+        }
+    }
+}
+.carousel-caption {
+   transform: translateY(3vh);
+   height: 10vh;
+  
+
+    p,
+    h5 {
+        font-size: 7pt;
+        transform: translateY(-2vh);
+    }
+}
+.main-contacto {
+        .cover {
+            .formulario {
+                .formulario_caja {
+                    form {
+                        fieldset {
+                           
+    
+                            .form_row {
+                                .form_input {
+                                    width: 50vw;
+    
+                                }
+                                .form_list {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    grid-template-rows: 1fr 1fr;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+            
+        }
+        
+
+
+}
+
+

@@ -111,6 +111,17 @@ main {
       padding-bottom: 15vh;
       padding-right: 15vw;
       padding-left: 15vw; }
+    .seccion-main #sobremi:checked ~ .car1m, .seccion-bodas #sobremi:checked ~ .car1m, .seccion-quince #sobremi:checked ~ .car1m, .seccion-newborn #sobremi:checked ~ .car1m, .seccion-maternidad #sobremi:checked ~ .car1m, .seccion-gastro #sobremi:checked ~ .car1m {
+      display: flex;
+      background-color: #91b09f;
+      border-top: solid 1vh #6a8174;
+      border-left: solid 1vh #6a8174;
+      border-right: solid 1vh #6a8174;
+      border-bottom: solid 1vh #6a8174;
+      padding-top: 15vh;
+      padding-bottom: 15vh;
+      padding-right: 15vw;
+      padding-left: 15vw; }
   .seccion-main .car1, .seccion-bodas .car1, .seccion-quince .car1, .seccion-newborn .car1, .seccion-maternidad .car1, .seccion-quince .car2, .seccion-newborn .car2, .seccion-maternidad .car2, .seccion-gastro .car1 {
     display: none; }
     .seccion-main .car1 .carousel-item, .seccion-bodas .car1 .carousel-item, .seccion-quince .car1 .carousel-item, .seccion-newborn .car1 .carousel-item, .seccion-maternidad .car1 .carousel-item, .seccion-quince .car2 .carousel-item, .seccion-newborn .car2 .carousel-item, .seccion-maternidad .car2 .carousel-item, .seccion-gastro .car1 .carousel-item {
@@ -121,6 +132,8 @@ main {
     .seccion-main .car1 .carousel-caption, .seccion-bodas .car1 .carousel-caption, .seccion-quince .car1 .carousel-caption, .seccion-newborn .car1 .carousel-caption, .seccion-maternidad .car1 .carousel-caption, .seccion-quince .car2 .carousel-caption, .seccion-newborn .car2 .carousel-caption, .seccion-maternidad .car2 .carousel-caption, .seccion-gastro .car1 .carousel-caption {
       background-color: #000000f1;
       border-radius: 10px; }
+  .seccion-main .car1m, .seccion-bodas .car1m, .seccion-quince .car1m, .seccion-newborn .car1m, .seccion-maternidad .car1m, .seccion-gastro .car1m {
+    display: none; }
 
 .seccion-bodas {
   display: flex;
@@ -539,7 +552,7 @@ footer {
   footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center; }
     footer .frow1 {
       display: flex;
@@ -549,7 +562,9 @@ footer {
       footer .frow1 .firma {
         justify-content: center;
         width: 100vw;
-        height: auto; }
+        height: auto;
+        margin-top: 2vh;
+        margin-bottom: 2vh; }
         footer .frow1 .firma a {
           display: flex;
           justify-content: center;
@@ -559,4 +574,30 @@ footer {
       footer .frow1 .rrss {
         flex-direction: row;
         justify-content: space-around;
-        width: 100vw; } }
+        width: 100vw;
+        padding: 10%;
+        margin-top: 2vh;
+        margin-bottom: 2vh; }
+      footer .frow1 .frow2 h4 {
+        margin-top: 1vh;
+        margin-bottom: 1vh; } }
+
+@media screen and (max-width: 425px) {
+  nav header #check:checked ~ .menu {
+    flex-direction: column; }
+  main .seccion-main .sobremi, main .seccion-bodas .sobremi, main .seccion-quince .sobremi, main .seccion-newborn .sobremi, main .seccion-maternidad .sobremi, main .seccion-gastro .sobremi, .seccion-bodas label main .seccion-main .boton1, main .seccion-bodas label .boton1, .seccion-bodas label main .seccion-quince .boton1, .seccion-bodas label main .seccion-newborn .boton1, .seccion-bodas label main .seccion-maternidad .boton1, .seccion-bodas label main .seccion-gastro .boton1, .seccion-quince label main .seccion-main .boton1, .seccion-quince label main .seccion-bodas .boton1, main .seccion-quince label .boton1, .seccion-quince label main .seccion-newborn .boton1, .seccion-quince label main .seccion-maternidad .boton1, .seccion-quince label main .seccion-gastro .boton1, .seccion-newborn label main .seccion-main .boton1, .seccion-newborn label main .seccion-bodas .boton1, .seccion-newborn label main .seccion-quince .boton1, main .seccion-newborn label .boton1, .seccion-newborn label main .seccion-maternidad .boton1, .seccion-newborn label main .seccion-gastro .boton1, .seccion-maternidad label main .seccion-main .boton1, .seccion-maternidad label main .seccion-bodas .boton1, .seccion-maternidad label main .seccion-quince .boton1, .seccion-maternidad label main .seccion-newborn .boton1, main .seccion-maternidad label .boton1, .seccion-maternidad label main .seccion-gastro .boton1, .seccion-gastro label main .seccion-main .boton1, .seccion-gastro label main .seccion-bodas .boton1, .seccion-gastro label main .seccion-quince .boton1, .seccion-gastro label main .seccion-newborn .boton1, .seccion-gastro label main .seccion-maternidad .boton1, main .seccion-gastro label .boton1 {
+    width: 50vw;
+    right: 25vw; }
+  .carousel-caption {
+    transform: translateY(3vh);
+    height: 10vh; }
+    .carousel-caption p,
+    .carousel-caption h5 {
+      font-size: 7pt;
+      transform: translateY(-2vh); }
+  .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_input {
+    width: 50vw; }
+  .main-contacto .cover .formulario .formulario_caja form fieldset .form_row .form_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; } }
